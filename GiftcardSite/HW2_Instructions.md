@@ -52,7 +52,7 @@ After you compy these directories and files over, be sure to generate
 the database that django relies on. This can be done by running the commands:
 
 ```
-python manage.py makemigration LegacySite
+python manage.py makemigrations LegacySite
 python manage.py makemigrations
 python manage.py migrate
 sh import_dbs.sh
