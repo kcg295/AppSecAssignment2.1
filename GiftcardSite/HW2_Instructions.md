@@ -23,15 +23,26 @@ mimic in any way.
 ## Part 0: Setting up Your Environment
 
 In order to complete this assignment you will need the git VCS, Travis, 
-python 3 and the Django web framework. Some additional tools that may 
-be useful for this assignment (but are not necessary) are 
-sqlite, burp suite, the python requests library, and the web development 
-console of your favorite browser. If you are runing a \*NIX system, 
-these tools should be pre-installed and/or available in your distribution's 
-package manager. Like in the last assignment we will not be checking for 
-git best practices like writing good commit messages. However, we will be
-checking for signed commits, since they are security relevant. Additionally, 
-it is in your best interest to continue to follow git best practices.
+python 3 and the Django web framework. You can install Django using the 
+following command:
+
+```
+sudo pip3 install django
+```
+NOTE: It is better practice to do this within a virtual environment and 
+not use sudo, however, learning virtual environments adds an additional
+learning curve that is not part of the class. If you already know how to
+do this, we recommend the virtual environment approach.
+
+Some additional tools that may be useful for this assignment (but are
+not necessary) are sqlite, burp suite, the python requests library,
+and the web development console of your favorite browser. If you are
+runing a \*NIX system, these tools should be pre-installed and/or
+available in your distribution's package manager. Like in the last
+assignment we will not be checking for git best practices like writing good
+commit messages. However, we will be checking for signed commits, since
+they are security relevant. Additionally, it is in your best interest to
+continue to follow git best practices.
 
 When you are ready to begin the project, please create a repository 
 on GitHub for your second assignment. Like before, be sure to make 
