@@ -160,7 +160,7 @@ Part 2 is worth 35 points:
 
 * 10 points for encrypted database models
 * 10 points for proper key management
-* 05 points for your writeup.
+* 15 points for your writeup.
 
 ## What to Submit
 
