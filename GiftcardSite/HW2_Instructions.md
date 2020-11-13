@@ -91,7 +91,7 @@ write:
    ``admin.''
 4. *One* attack that exploits another attack not listed above on the server.
    Some hints for this section are: looking at the way the passwords are
-   stored, and looking at how interactions are done with the giftcardreader
+   stored, or looking at how interactions are done with the giftcardreader
    binary.
 5. A text file, `bugs.txt` explaining the bug triggered by each of your
    attacks, and describing any other vulnerabilities or broken 
