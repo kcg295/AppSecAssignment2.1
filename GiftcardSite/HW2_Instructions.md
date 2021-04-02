@@ -46,7 +46,7 @@ continue to follow git best practices.
 
 When you are ready to begin the project, please create a repository 
 on GitHub for your second assignment. Like before, be sure to make 
-the repository **private**. Create a travis.yml file, which you will 
+the repository **private**. Create a .travis.yml file, which you will 
 use to test your program later.
 
 
