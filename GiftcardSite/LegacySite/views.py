@@ -145,11 +145,14 @@ def gift_card_view(request, prod_num=0):
         if user_account is None:
             context['user'] = None
             return render(request, f"gift.html", context)
+        amount = request.POST.get('amount', None)
+        if amount is None or amount == '':
+            amount = prod.recommended_price
+        prod = Product.objects.get(product_id=prod_num)
         context['user'] = user_account
         num_cards = len(Card.objects.filter(user=user_account))
         card_file_path = f"/tmp/addedcard_{user_account.id}_{num_cards + 1}.gftcrd'"
-        extras.write_card_data(card_file_path)
-        prod = Product.objects.get(product_id=prod_num)
+        extras.write_card_data(card_file_path, prod, amount, user_account)
         card_file = open(card_file_path, 'rb')
         card = Card(data=card_file.read(), product=prod, amount=request.POST.get('amount', prod.recommended_price), fp=card_file_path, user=user_account)
         card.save()
@@ -182,7 +185,6 @@ def use_card_view(request):
         # check if we know about card.
         # KG: Where is this data coming from? RAW SQL usage with unkown
         # KG: data seems dangerous.
-        print(card_data.strip())
         signature = json.loads(card_data)['records'][0]['signature']
         # signatures should be pretty unique, right?
         card_query = Card.objects.raw('select id from LegacySite_card where data = \'%s\'' % signature)
