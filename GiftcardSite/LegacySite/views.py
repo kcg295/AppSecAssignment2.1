@@ -209,13 +209,13 @@ def use_card_view(request):
             else:
                 card_file_path = f'/tmp/newcard_{request.user.id}_{user_cards[0].count + 1}.gftcrd'
             with open(card_file_path, 'w') as fp:
-                fp.write(card_data.decode())
+                fp.write(card_data)
 
             card = Card(data=card_data, fp=card_file_path, user=request.user, used=True)
         else:
             context['card_found'] = card_query_string
             try:
-                card = Card.objects.get(data=card_data)
+                card = Card.objects.get(data=bytes(card_data, 'utf-8'))
                 card.used = True
             except ObjectDoesNotExist:
                 card = None
