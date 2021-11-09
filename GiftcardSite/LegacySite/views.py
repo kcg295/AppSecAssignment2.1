@@ -208,9 +208,9 @@ def use_card_view(request):
                 card_file_path = f'/tmp/{card_fname}_{request.user.id}_{user_cards[0].count + 1}.gftcrd'
             else:
                 card_file_path = f'/tmp/newcard_{request.user.id}_{user_cards[0].count + 1}.gftcrd'
-            fp = open(card_file_path, 'w')
-            fp.write(card_data)
-            fp.close()
+            with open(card_file_path, 'w') as fp:
+                fp.write(card_data.decode())
+
             card = Card(data=card_data, fp=card_file_path, user=request.user, used=True)
         else:
             context['card_found'] = card_query_string
