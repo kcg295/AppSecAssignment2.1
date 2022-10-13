@@ -22,7 +22,7 @@ mimic in any way.
 
 ## Part 0: Setting up Your Environment
 
-In order to complete this assignment you will need the git VCS, Travis, 
+In order to complete this assignment you will need the git VCS, Travis or GitHub Actions, 
 python 3 and the Django web framework. You can install Django using the 
 following command:
 
@@ -153,7 +153,7 @@ Part 1 is worth 65 points:
 * 25 points for your attack cases
 * 15 points for all fixes
 * 10 points for the bug writeup
-* 10 points for Travis regression testing
+* 10 points for Travis or GitHub Actions regression testing
 * 05 points for signed git commits.
 
 Part 2 is worth 35 points:
