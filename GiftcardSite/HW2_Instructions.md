@@ -110,8 +110,8 @@ Finally, fix the vulnerabilites that are exploited by your attacks,
 and verify that the attacks no long succeed on your site. You are 
 allowed to use django plugins and other libraries to fix these 
 vulnerabilities. To make sure that these bugs don't come up again as
-the code evolves, write some test cases for django that test for 
-these vulnerabilites. Then have Travis run these tests with each push.
+the code evolves, write some test cases for django that test for all of
+these vulnerabilites. Then have GitHub Actions run these tests with each push.
 
 When you are finished with this section, please mark your part 1 
 submission by tagging the desired commit with the tag "part_1_complete"
