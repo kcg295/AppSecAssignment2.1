@@ -177,7 +177,7 @@ The repository should contain:
   * Your GitHub Actions yaml
   * At least one signed commit
   * A directory named `part1` that contains your attack cases.
-  * An updated .travis.yml that runs your tests.
+  * An updated GitHub actions yml that runs your tests.
   * A commit with the fixed version of the code (if you like, this
     commit can also contain the files mentioned above) tagged as
     part_1_complete.
