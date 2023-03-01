@@ -56,7 +56,7 @@ Start off by copying the files from this repository into your own, and
 add them to git. The files and directories you need are:
 
 ```
-GiftcardSite LegacySite images templates manage.py
+GiftcardSite LegacySite images templates manage.py products.csv users.csv import_dbs.sh
 ```
 
 After you compy these directories and files over, be sure to generate 
