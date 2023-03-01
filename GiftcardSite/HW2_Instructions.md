@@ -22,7 +22,7 @@ mimic in any way.
 
 ## Part 0: Setting up Your Environment
 
-In order to complete this assignment you will need the git VCS, Travis or GitHub Actions, 
+In order to complete this assignment you will need the git VCS, GitHub Actions, 
 python 3 and the Django web framework. You can install Django using the 
 following command:
 
@@ -46,7 +46,7 @@ continue to follow git best practices.
 
 When you are ready to begin the project, please create a repository 
 on GitHub for your second assignment. Like before, be sure to make 
-the repository **private**. Create a travis.yml file, which you will 
+the repository **private**. Create a GitHub yml file, which you will 
 use to test your program later.
 
 
