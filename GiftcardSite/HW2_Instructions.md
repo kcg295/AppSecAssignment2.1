@@ -153,7 +153,7 @@ Part 1 is worth 65 points:
 * 25 points for your attack cases
 * 15 points for all fixes
 * 10 points for the bug writeup
-* 10 points for Travis or GitHub Actions regression testing
+* 10 points for GitHub Actions regression testing
 * 05 points for signed git commits.
 
 Part 2 is worth 35 points:
