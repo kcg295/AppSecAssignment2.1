@@ -174,7 +174,7 @@ your grader the day you turn your assignment in.
 The repository should contain:
 
 * Part 1
-  * Your .travis.yml
+  * Your GitHub Actions yaml
   * At least one signed commit
   * A directory named `part1` that contains your attack cases.
   * An updated .travis.yml that runs your tests.
