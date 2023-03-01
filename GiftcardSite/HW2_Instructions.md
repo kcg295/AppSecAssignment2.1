@@ -84,9 +84,9 @@ write:
 
 1. *One* attack, that exploits a XSS (cross-site scripting) 
    vulnerability.
-2. *One* attack that allows you to force another user to gift
+2. *One* CSRF attack that allows you to force another user to gift
    a gift card to your account without their knowledge.
-3. *One* attack that allows you to obtain the salted password for a user
+3. *One* SQLi attack that allows you to obtain the salted password for a user
    given their username. The database should contain a user named 
    ``admin.''
 4. *One* attack that exploits another attack not listed above on the server.
