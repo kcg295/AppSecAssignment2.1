@@ -158,13 +158,13 @@ Part 1 is worth 65 points:
 
 Part 2 is worth 35 points:
 
-* 10 points for encrypted database models
+* 10 points for encrypting the data field of the Card model.
 * 10 points for proper key management
 * 15 points for your writeup.
 
 ## What to Submit
 
-On NYU Classes, submit a link to your GitHub repository. The repository
+On Brightspace, submit a link to your GitHub repository. The repository
 should be **private**, and you should add the instructor/TA's GitHub
 account as a contributor to give them access for grading.
 
